@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Atom 文本选择 | Atom Flight Manual</title>
+        <title>语法 | Atom Flight Manual</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.3.3">
@@ -25,10 +25,8 @@
         
     
     
-    <link rel="next" href="../chapter-2-using-atom/editing-and-deleting-text.html" />
     
-    
-    <link rel="prev" href="../chapter-2-using-atom/moving-in-atom.html" />
+    <link rel="prev" href="../chapter-2-using-atom/autocomplete.html" />
     
 
         
@@ -36,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="Tue Jul 12 2016 00:14:10 GMT+0800 (CST)">
+    <div class="book" data-level="2.6" data-basepath=".." data-revision="Tue Jul 12 2016 00:14:10 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -178,7 +176,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="chapter-2-using-atom/atom-selections.html">
+        <li class="chapter " data-level="2.2" data-path="chapter-2-using-atom/atom-selections.html">
             
                 
                     <a href="../chapter-2-using-atom/atom-selections.html">
@@ -238,7 +236,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="chapter-2-using-atom/grammar.html">
+        <li class="chapter active" data-level="2.6" data-path="chapter-2-using-atom/grammar.html">
             
                 
                     <a href="../chapter-2-using-atom/grammar.html">
@@ -363,23 +361,14 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="atom-%E6%96%87%E6%9C%AC%E9%80%89%E6%8B%A9">Atom &#x6587;&#x672C;&#x9009;&#x62E9;</h1>
-<p>Atom &#x652F;&#x6301;&#x4E86;&#x5F88;&#x591A;&#x6587;&#x672C;&#x9009;&#x62E9;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x533A;&#x57DF;&#x5220;&#x9664;&#x3001;&#x7F29;&#x8FDB;&#x548C;&#x4E00;&#x4E9B;&#x67E5;&#x627E;&#x64CD;&#x4F5C;&#xFF0C;&#x4EE5;&#x53CA;&#x7528;&#x5F15;&#x53F7;&#x6216;&#x8005;&#x62EC;&#x53F7;&#x628A;&#x6587;&#x5B57;&#x62EC;&#x8D77;&#x6765;&#x4E4B;&#x7C7B;&#x7684;&#x6807;&#x8BB0;&#x64CD;&#x4F5C;&#x3002;</p>
-<p>&#x9009;&#x62E9;&#x547D;&#x4EE4;&#x501F;&#x9274;&#x4E86;&#x5F88;&#x591A;&#x79FB;&#x52A8;&#x547D;&#x4EE4;&#x3002;&#x5B83;&#x4EEC;&#x5B9E;&#x9645;&#x4E0A;&#x4E0E;&#x79FB;&#x52A8;&#x547D;&#x4EE4;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5FEB;&#x6377;&#x952E;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x52A0;&#x4E86;&#x4E2A; <code>shift</code> &#x3002;</p>
-<p><code>ctrl-shift-P</code>&#xFF1A;&#x9009;&#x62E9;&#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5230;&#x4E0A;&#x4E00;&#x884C;&#x7684;&#x76F8;&#x540C;&#x4F4D;&#x7F6E;&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</p>
-<p><code>ctrl-shift-N</code>&#xFF1A;&#x9009;&#x62E9;&#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5230;&#x4E0B;&#x4E00;&#x884C;&#x7684;&#x76F8;&#x540C;&#x4F4D;&#x7F6E;&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</p>
-<p><code>ctrl-shift-B</code>&#xFF1A;&#x9009;&#x62E9;&#x524D;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</p>
-<p><code>ctrl-shift-F</code>&#xFF1A;&#x9009;&#x62E9;&#x540E;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;</p>
-<p><code>alt-shift-B</code>&#xFF0C;<code>alt-shift-left</code>&#xFF1A;&#x9009;&#x62E9;&#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5230;&#x5355;&#x8BCD;&#x5F00;&#x5934;&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</p>
-<p><code>alt-shift-F</code>&#xFF0C;<code>alt-shift-right</code>&#xFF1A;&#x9009;&#x62E9;&#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5230;&#x5355;&#x8BCD;&#x672B;&#x5C3E;&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</p>
-<p><code>ctrl-shift-E</code>&#xFF0C;<code>cmd-shift-right</code>&#xFF1A;&#x9009;&#x62E9;&#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5230;&#x672C;&#x884C;&#x672B;&#x5C3E;&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</p>
-<p><code>ctrl-shift-A</code>&#xFF0C;<code>cmd-shift-left</code>&#xFF1A;&#x9009;&#x62E9;&#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5230;&#x672C;&#x884C;&#x5F00;&#x5934;&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</p>
-<p><code>cmd-shift-up</code>&#xFF1A;&#x9009;&#x62E9;&#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5230;&#x6587;&#x4EF6;&#x5F00;&#x5934;&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</p>
-<p><code>cmd-shift-down</code>&#xFF1A;&#x9009;&#x62E9;&#x4ECE;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x5230;&#x6587;&#x4EF6;&#x5E95;&#x90E8;&#x4E4B;&#x95F4;&#x7684;&#x5185;&#x5BB9;</p>
-<p>&#x9664;&#x4E86;&#x901A;&#x8FC7;&#x79FB;&#x52A8;&#x5149;&#x6807;&#x6765;&#x8FDB;&#x884C;&#x9009;&#x62E9;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x65B9;&#x4FBF;&#x9009;&#x62E9;&#x5185;&#x5BB9;&#x7684;&#x7279;&#x5B9A;&#x533A;&#x57DF;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
-<p><code>cmd-A</code>&#xFF1A;&#x9009;&#x62E9;&#x6574;&#x4E2A;&#x7F13;&#x51B2;&#x533A;</p>
-<p><code>cmd-L</code>&#xFF1A;&#x9009;&#x62E9;&#x6574;&#x884C;</p>
-<p><code>ctrl-shift-W</code>&#xFF1A;&#x9009;&#x62E9;&#x5F53;&#x524D;&#x5355;&#x8BCD;</p>
+                        <!-- 译者：Github@wizardforcel -->
+<h1 id="%E8%AF%AD%E6%B3%95">&#x8BED;&#x6CD5;</h1>
+<p>&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x201C;&#x8BED;&#x6CD5;&#x201D;&#xFF0C;&#x662F; Atom &#x6240;&#x8BA4;&#x4E3A;&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x80FD;&#x662F; Java &#x6216;&#x8005; Markdown&#xFF08;&#x6216;&#x8005;&#x5176;&#x5B83;&#x7684;&#xFF09;&#xFF0C;&#x6211;&#x4EEC;&#x5728; Snippets &#x4E00;&#x8282;&#x4E2D;&#x521B;&#x5EFA;&#x4EE3;&#x7801;&#x6BB5;&#x7684;&#x65F6;&#x5019;&#x5DF2;&#x7ECF;&#x89C1;&#x8BC6;&#x8FC7;&#x8FD9;&#x4E00;&#x70B9;&#x4E86;&#x3002;</p>
+<p>&#x52A0;&#x8F7D;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;Atom &#x4F1A;&#x505A;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#x6765;&#x8BD5;&#x56FE;&#x8BC6;&#x522B;&#x51FA;&#x6587;&#x4EF6;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;Atom &#x4F1A;&#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x7684;&#x6269;&#x5C55;&#x540D;&#xFF08;<code>.md</code> &#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A; Markdown &#x6587;&#x4EF6;&#xFF0C;&#x7B49;&#x7B49;&#xFF09;&#x6765;&#x5B8C;&#x6210;&#x8FD9;&#x9879;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F46;&#x6709;&#x65F6;&#x53EA;&#x901A;&#x8FC7;&#x6269;&#x5C55;&#x540D;&#x96BE;&#x4EE5;&#x5224;&#x65AD;&#xFF0C;&#x5B83;&#x4F1A;&#x5BF9;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x68C0;&#x67E5;&#x6765;&#x786E;&#x5B9A;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x52A0;&#x8F7D;&#x4E86;&#x4E00;&#x4E2A; Atom &#x65E0;&#x6CD5;&#x5224;&#x65AD;&#x8BED;&#x6CD5;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x4F1A;&#x9ED8;&#x8BA4;&#x4E3A;&#x662F;&#x6700;&#x7B80;&#x5355;&#x7684;&#x7EAF;&#x6587;&#x672C;&#x7C7B;&#x578B;&#xFF08;Plain Text&#xFF09;&#x3002;&#x5982;&#x679C;&#x5B83;&#x628A;&#x6587;&#x4EF6;&#x9ED8;&#x8BA4;&#x4E3A;&#x7EAF;&#x6587;&#x672C;&#xFF0C;&#x6216;&#x8005;&#x5F04;&#x9519;&#x4E86;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#xFF0C;&#x518D;&#x6216;&#x8005;&#x7531;&#x4E8E;&#x4E00;&#x4E9B;&#x539F;&#x56E0;&#x4F60;&#x60F3;&#x4FEE;&#x6539;&#x6587;&#x4EF6;&#x7684;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x8BED;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x4E0B; <code>ctrl-shift-L</code> &#x8C03;&#x51FA;&#x8BED;&#x6CD5;&#x9009;&#x62E9;&#x5668;&#x3002;</p>
+<p><img src="images/grammar.png" alt=""></p>
+<p>&#x4E00;&#x65E6;&#x624B;&#x52A8;&#x4FEE;&#x6539;&#x4E86;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;Atom &#x4F1A;&#x8BB0;&#x4F4F;&#x5B83;&#xFF0C;&#x9664;&#x975E;&#x4F60;&#x5C06;&#x8BED;&#x6CD5;&#x8BBE;&#x7F6E;&#x56DE;&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#xFF0C;&#x6216;&#x8005;&#x624B;&#x52A8;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x8BED;&#x6CD5;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#x9009;&#x62E9;&#x5668;&#x7684;&#x529F;&#x80FD;&#x5728; <a href="https://github.com/atom/grammar-selector" target="_blank">atom/grammar-selector</a> &#x8FD9;&#x4E2A; package &#x91CC;&#x5B9E;&#x73B0;&#x3002;</p>
 
                     
                     </section>
@@ -390,10 +379,8 @@
         </div>
 
         
-        <a href="../chapter-2-using-atom/moving-in-atom.html" class="navigation navigation-prev " aria-label="Previous page: 在 Atom 里移动"><i class="fa fa-angle-left"></i></a>
+        <a href="../chapter-2-using-atom/autocomplete.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 自动补全"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../chapter-2-using-atom/editing-and-deleting-text.html" class="navigation navigation-next " aria-label="Next page: 编辑和删除文本"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
